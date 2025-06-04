@@ -11,7 +11,8 @@ output P;
 wire [4:0] f;
 wire [3:0] B, A;
 
-assign f = a + b;
+// assign f = a + b;
+fourbit_adder U0(a[0],a[1],a[2],a[3],b[0],b[1],b[2],b[3],f[4],f[3],f[2],f[1],f[0]);
 
 five_to_2digit U1(f, B, A);
 
